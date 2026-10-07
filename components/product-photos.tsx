@@ -33,7 +33,8 @@ export function ProductPhotos() {
                   alt={photo.alt}
                   width={768}
                   height={768}
-                  className="aspect-square h-auto w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  draggable={false}
+                  className="select-none aspect-square h-auto w-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
               <span className="text-sm font-medium text-foreground">{photo.caption}</span>

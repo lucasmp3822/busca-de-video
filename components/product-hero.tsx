@@ -52,7 +52,8 @@ export function ProductHero() {
             width={1024}
             height={1536}
             priority
-            className="h-auto w-full rounded-2xl"
+            draggable={false}
+            className="pointer-events-none h-auto w-full select-none rounded-2xl"
           />
         </div>
       </div>
