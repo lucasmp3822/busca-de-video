@@ -9,12 +9,15 @@ export function PromoVideo() {
           <video
             src="/videos/lg-k62-promo.mp4"
             poster="/videos/lg-k62-promo-poster.jpg"
-            className="aspect-[9/16] w-full object-cover"
+            className="pointer-events-none aspect-[9/16] w-full select-none object-cover"
             autoPlay
             muted
             loop
             playsInline
-            controls
+            disablePictureInPicture
+            disableRemotePlayback
+            controlsList="nodownload nofullscreen noremoteplayback"
+            draggable={false}
             preload="metadata"
             aria-label="Vídeo promocional do LG K62"
           />
