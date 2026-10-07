@@ -7,7 +7,7 @@ const geistSans = Geist({ subsets: ['latin'], variable: '--font-geist-sans' })
 const geistMono = Geist_Mono({ subsets: ['latin'], variable: '--font-geist-mono' })
 
 export const metadata: Metadata = {
-  title: 'LG K62 | Galeria de vídeos',
+  title: 'LG K62 | Oferta de Natal',
   description:
     'Envie e assista aos vídeos do LG K62: demonstrações, unboxing e campanhas do produto.',
   generator: 'v0.app',

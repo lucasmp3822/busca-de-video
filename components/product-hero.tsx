@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Cpu, HardDrive, Camera } from 'lucide-react'
+import { PRODUCT_URL } from '@/lib/product'
 
 const specs = [
   { icon: Cpu, label: 'Octa-Core 2.3 GHz' },
@@ -16,11 +17,11 @@ export function ProductHero() {
             Edição de Natal
           </span>
           <h1 className="text-balance text-4xl font-bold tracking-tight md:text-6xl">
-            LG K62 em vídeo
+            LG K62
           </h1>
           <p className="max-w-md text-pretty text-lg leading-relaxed text-[#0f1a3d]/80">
-            Envie demonstrações, unboxings e campanhas do produto e mantenha todos os vídeos
-            organizados em uma galeria pronta para compartilhar.
+            Smartphone com câmera quádrupla, processador Octa-Core e 64GB de armazenamento. O
+            presente certo para este Natal.
           </p>
           <ul className="flex flex-wrap gap-2">
             {specs.map(({ icon: Icon, label }) => (
@@ -33,12 +34,22 @@ export function ProductHero() {
               </li>
             ))}
           </ul>
-          <a
-            href="#enviar"
-            className="w-fit rounded-lg bg-[#1e3aa8] px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#162d85] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0f1a3d]"
-          >
-            Enviar vídeo
-          </a>
+          <div className="flex flex-wrap gap-3">
+            <a
+              href={PRODUCT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-fit rounded-lg bg-[#1e3aa8] px-6 py-3 text-base font-semibold text-white transition-colors hover:bg-[#162d85] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0f1a3d]"
+            >
+              Comprar agora
+            </a>
+            <a
+              href="#enviar"
+              className="w-fit rounded-lg border-2 border-[#0f1a3d] px-5 py-3 text-sm font-semibold text-[#0f1a3d] transition-colors hover:bg-[#0f1a3d]/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0f1a3d]"
+            >
+              Enviar vídeo
+            </a>
+          </div>
         </div>
         <div className="flex w-full max-w-xs flex-1 justify-center md:max-w-sm">
           <Image
