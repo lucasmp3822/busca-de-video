@@ -43,12 +43,6 @@ export function ProductHero() {
             >
               Comprar agora
             </a>
-            <a
-              href="#enviar"
-              className="w-fit rounded-lg border-2 border-[#0f1a3d] px-5 py-3 text-sm font-semibold text-[#0f1a3d] transition-colors hover:bg-[#0f1a3d]/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0f1a3d]"
-            >
-              Enviar vídeo
-            </a>
           </div>
         </div>
         <div className="flex w-full max-w-xs flex-1 justify-center md:max-w-sm">

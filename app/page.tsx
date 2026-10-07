@@ -1,7 +1,6 @@
 import { ProductHero } from '@/components/product-hero'
 import { PromoVideo } from '@/components/promo-video'
 import { ProductPhotos } from '@/components/product-photos'
-import { VideoLibrary } from '@/components/video-library'
 import { PRODUCT_URL } from '@/lib/product'
 
 export default function Page() {
@@ -10,7 +9,6 @@ export default function Page() {
       <ProductHero />
       <PromoVideo />
       <ProductPhotos />
-      <VideoLibrary />
       <footer className="border-t border-border py-8">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-4">
           <p className="text-sm text-muted-foreground">

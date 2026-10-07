@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { PRODUCT_URL } from '@/lib/product'
 
 const photos = [
+  { src: '/images/lg-k62-oficial.jpg', alt: 'LG K62 azul, frente, lateral e traseira', caption: 'Frente, lateral e traseira' },
   { src: '/images/produto-frente.png', alt: 'LG K62 azul visto de frente e de costas', caption: 'Design azul elegante' },
   { src: '/images/produto-camera.png', alt: 'Detalhe da câmera quádrupla do LG K62', caption: 'Câmera quádrupla' },
   { src: '/images/produto-mao.png', alt: 'Pessoa segurando o LG K62', caption: 'Confortável na mão' },
